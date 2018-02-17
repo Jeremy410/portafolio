@@ -62,7 +62,7 @@ db.once('open', function() {
     
 });
 */
-var port = 80;
+var port = 80   ;
 app.listen(port, () => {
-    console.log("Example app listening on " + port + "!");
+    console.log("Portafolio app listening on port " + port + "!");
 });
