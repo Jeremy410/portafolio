@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.post('/message/add', (req, res) => {
+app.post('/message/send', (req, res) => {
     var message = new Message({
         name : req.body.name.trim(),
         email : req.body.email.trim(),
@@ -62,7 +62,7 @@ db.once('open', function() {
     
 });
 */
-var port = 80   ;
+var port = 80;
 app.listen(port, () => {
     console.log("Portafolio app listening on port " + port + "!");
 });
