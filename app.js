@@ -7,6 +7,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 var mailSender = require('./helpers/mail-sender');
+var config = require('./config').get(process.argv[2]);
 
 app.get('/', (req, res) => {    
     res.render('index', {
@@ -62,7 +63,7 @@ db.once('open', function() {
     
 });
 */
-var port = 80;
+var port = config.port;
 app.listen(port, () => {
-    console.log("Portafolio app listening on port " + port + "!");
+    console.log("Portafolio app running on port " + port);
 });
