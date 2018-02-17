@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><%= title %></title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/styles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/styles/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                      <img src="/images/me.jpg" class="profile-img img-responsive img-circle" alt="" width="50"> Jeremy López
+                  </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="intro-text"><em>"Writing code is my passion, building software is what I love."</em></p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <% if (typeof message !== 'undefined') { %>
+                  <div id="message-sucess" class="alert alert-success fade in">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+                    <p><%= message %></p>
+                  </div>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Download Section -->
+    <section id="about" class="container content-section">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>Hi, I’m Jeremy López <br> <small>An interactive Web Developer currently working at <a target="_blank" style="color: #126394;" href="https://www.popularenlinea.com">Banco Popular Dominicano</a></small> </h3>
+            </div>
+        </div>
+        <div class="row skill-animation">
+            <div class="col-lg-4">
+             <img src="/images/os2.png" style="padding-top: 22px;" class="img-responsive desaturate" alt="Laptop">
+             <h3 class="text-center">Operating Systems</h3>
+             <hr class="horizontal-hr" />
+             <p class="text-center">Experience coding on all major platforms, including Windows, Linux, Unix, Android.</p>
+         </div>
+         <div class="col-lg-4">
+             <img src="/images/brackets.png" class="img-responsive desaturate" alt="OS">
+             <h3 class="text-center">Back-end Developer</h3>
+             <hr class="horizontal-hr" />
+             <p class="text-center">Currently working as a Javascript Developer. Responsible for building and maintaining the server-side of a web application, which includes the server, the application, and the database.</p>
+         </div>
+         <div class="col-lg-4">
+             <img src="/images/laptop.png" class="img-responsive desaturate" alt="Creative Software">
+             <h3 class="text-center">Creative Software</h3>
+             <hr class="horizontal-hr" />
+             <p class="text-center">Familiar with Git, Eclipse, Intellij, NetBeans, Visual Studio 2010/2013/2015 and many more.</p>
+         </div>
+     </div>
+
+     <div class="row skill-animation">
+         <div class="col-lg-4 ">
+             <img src="/images/idesign.png" class="img-responsive desaturate" alt="Interation Design">
+             <h3 class="text-center">Interaction Design</h3>
+             <hr class="horizontal-hr" />
+             <p class="text-center">Even I focus on back-end development I also ensure that the web design process is the best interaction for each situation to guide the user in their digital journey, as this is essential in creating engaging and effective experiences.</p>
+         </div>
+         <div class="col-lg-4">
+             <img src="/images/responsive.png" class="img-responsive desaturate" style="padding-top: 7px;" alt="Responsive Design">
+             <h3 class="text-center">Resposive Design</h3>
+             <hr  class="horizontal-hr"/>
+             <p class="text-center">I've gained a lot of experience building responsive websites. I've developed a personal approach to testing different solutions that has brought me to design mostly in the browser.</p>
+         </div>
+         <div class="col-lg-4">
+             <img src="/images/agile.png" class="img-responsive desaturate" style="width: 120px; margin-top:-22px;" alt="Agile Development">
+             <h3 class="text-center">Agile Software Development</h3>
+             <hr class="horizontal-hr" />
+             <p class="text-center">Servant-leader capable of delivering mid-scale software and web development projects by effectively collaborating, facilitating on multiple Scrum Teams. Good experience at driving the adoption of Scrum Rules, removing impediments and fostering self-management. </p>
+         </div>
+     </div>
+ </section>
+
+ <!-- Contact Section -->
+ <section id="contact" class="content-section" style="color: black;">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="text-center uppercase">Contact me :)</h2>
+            <div class="container">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <strong>Send me a message</strong>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <form class="form-horizontal" role="form" method="post" action="/message/add">
+                                    <div class="form-group">
+                                        <label for="name" class="col-sm-2 control-label">Name</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" required class="form-control" name="name"  id="name" placeholder="First & Last Name" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" required class="form-control" name="email" placeholder="example@domain.com" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description" class="col-sm-2 control-label">Message</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" required  rows="4" name="description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-10 col-sm-offset-2">
+                                            <input id="submit" type="submit" value="Send" class="btn btn-primary btn-width">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer style="background-color: #2E343D; padding-bottom: 0; padding: 3%;">
+    <div class="text-center" style="color: white;">
+        <h4>Built with <div class="heart pulse2"><i class="fa fa-heart" aria-hidden="true"></i></div></h4>
+    </div>
+    <hr style="border: 0.5px solid #47637C; width: 95%" />
+    <div class="row text-center">
+        <div class="col-lg-6">
+            <p style="color: white; font-size: 14px">Jeremy López ©<%= currentYear %>. All rights reserved.</p>
+        </div>
+       <div class="col-lg-6">
+            <a href="https://twitter.com/Jeremy426" target="_blank" class="media"><i class="fa fa-twitter fa-lg"></i></a>
+            <a href="https://github.com/Jeremy410" target="_blank" class="media"><i class="fa fa-github fa-lg"></i></a>
+            <a href="https://do.linkedin.com/in/jeremy-lópez-a95881b5" target="_blank" class="media"><i class="fa fa-linkedin fa-lg"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/dependencies/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/dependencies/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/js/jquery.easing.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/app.js"></script>
+</body>
+</html>
