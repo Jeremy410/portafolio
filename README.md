@@ -7,6 +7,7 @@ This app is based in nodejs
 
 ### Installation
 
-- Download the code
+- Run git clone https://github.com/Jeremy410/portafolio.git
+- Run npm install
 - Set the .env file variables
-- Hit node app.js
+- Run node app.js
