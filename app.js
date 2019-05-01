@@ -46,7 +46,7 @@ app.post('/message/send', (req, res) => {
     });
 });
 
-var port = process.env.PORT;
+var port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("Portafolio app running on port " + port);
 });
