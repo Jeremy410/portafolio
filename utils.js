@@ -13,7 +13,7 @@ module.exports = {
         description: "Please, select captcha first"
       });
     }
-    const secretKey = "6LfNHKMUAAAAAPwoR4vOv2lzy6azs801XroSn95S";
+    const secretKey = process.env.RECAPTCHA_KEY;
     const verificationURL =
       "https://www.google.com/recaptcha/api/siteverify?secret=" +
       secretKey +
